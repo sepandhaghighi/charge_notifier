@@ -8,3 +8,13 @@ C:\Users\Sepkjaer\Documents\Visual Studio 2013\Projects\Charge\Charge\obj\Debug\
 C:\Users\Sepkjaer\Documents\Visual Studio 2013\Projects\Charge\Charge\obj\Debug\Charge.exe
 C:\Users\Sepkjaer\Documents\Visual Studio 2013\Projects\Charge\Charge\obj\Debug\Charge.xml
 C:\Users\Sepkjaer\Documents\Visual Studio 2013\Projects\Charge\Charge\obj\Debug\Charge.pdb
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\bin\Debug\Charge.exe.config
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\obj\Debug\Charge.exe
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\obj\Debug\Charge.xml
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\obj\Debug\Charge.pdb
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\bin\Debug\Charge.exe
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\bin\Debug\Charge.pdb
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\bin\Debug\Charge.xml
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\obj\Debug\Charge.Form1.resources
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\obj\Debug\Charge.Resources.resources
+C:\Users\Sepkjaer\Desktop\Charge_Notifier\Charge\Charge\obj\Debug\Charge.vbproj.GenerateResource.Cache

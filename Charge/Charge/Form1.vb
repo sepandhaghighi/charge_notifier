@@ -43,4 +43,13 @@
         End If
 
     End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        NotifyIcon1.BalloonTipText = "Charge Notifier Started"
+        NotifyIcon1.ShowBalloonTip(400)
+
+    End Sub
+
+
+ 
 End Class
