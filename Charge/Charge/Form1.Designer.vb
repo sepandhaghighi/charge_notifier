@@ -37,7 +37,10 @@ Partial Class Form1
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Exit_1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Show = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -154,33 +157,49 @@ Partial Class Form1
         '
         Me.NotifyIcon1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
-        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Text = "Charge_Notifier"
         Me.NotifyIcon1.Visible = True
         '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Exit_1, Me.ToolStripMenuItem2})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Exit_1, Me.Show})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(270, 124)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(174, 80)
         '
         'Exit_1
         '
         Me.Exit_1.Name = "Exit_1"
-        Me.Exit_1.Size = New System.Drawing.Size(269, 38)
+        Me.Exit_1.Size = New System.Drawing.Size(173, 38)
         Me.Exit_1.Text = "Exit"
         '
-        'ToolStripMenuItem2
+        'Show
         '
-        Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(269, 38)
-        Me.ToolStripMenuItem2.Text = "Message"
+        Me.Show.Name = "Show"
+        Me.Show.Size = New System.Drawing.Size(173, 38)
+        Me.Show.Text = "Show"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(849, 532)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(338, 105)
+        Me.Button2.TabIndex = 100
+        Me.Button2.Text = "Exit"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Timer1
+        '
+        '
+        'Timer2
+        '
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1215, 682)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Button1)
@@ -211,6 +230,9 @@ Partial Class Form1
     Friend WithEvents NotifyIcon1 As System.Windows.Forms.NotifyIcon
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents Exit_1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Show As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 
 End Class
