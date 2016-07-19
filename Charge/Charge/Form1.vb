@@ -49,6 +49,7 @@
         NotifyIcon1.BalloonTipText = "Charge Notifier Started"
         NotifyIcon1.ShowBalloonTip(70)
         ContextMenuStrip1.Enabled = False
+
         If SystemInformation.PowerStatus.BatteryChargeStatus = BatteryChargeStatus.Charging Then
             NotifyIcon1.BalloonTipText = "Battery Is Charging"
             NotifyIcon1.ShowBalloonTip(30)
@@ -82,7 +83,7 @@
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        If SystemInformation.PowerStatus.BatteryChargeStatus = 0 Then
+        If SystemInformation.PowerStatus.BatteryChargeStatus = BatteryChargeStatus.Charging Then
             Timer3.Enabled = True
             Timer1.Enabled = False
             Timer2.Enabled = True
@@ -90,7 +91,7 @@
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        If SystemInformation.PowerStatus.BatteryChargeStatus = 1 Then
+        If SystemInformation.PowerStatus.BatteryChargeStatus = BatteryChargeStatus.High Then
             Timer3.Enabled = False
             Timer2.Enabled = False
             Timer1.Enabled = True
@@ -98,7 +99,7 @@
         End If
     End Sub
 
-    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseClick
+    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.DoubleClick
         If Timer3.Enabled = True Then
             NotifyIcon1.BalloonTipText = Label5.Text + Label1.Text + ":" + Label4.Text + Label2.Text + ":" + Label3.Text + Label21.Text
 

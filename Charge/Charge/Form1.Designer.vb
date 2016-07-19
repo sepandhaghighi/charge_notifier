@@ -41,6 +41,7 @@ Partial Class Form1
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -165,18 +166,18 @@ Partial Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Exit_1, Me.Show})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(174, 80)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(149, 76)
         '
         'Exit_1
         '
         Me.Exit_1.Name = "Exit_1"
-        Me.Exit_1.Size = New System.Drawing.Size(173, 38)
+        Me.Exit_1.Size = New System.Drawing.Size(148, 36)
         Me.Exit_1.Text = "Exit"
         '
         'Show
         '
         Me.Show.Name = "Show"
-        Me.Show.Size = New System.Drawing.Size(173, 38)
+        Me.Show.Size = New System.Drawing.Size(148, 36)
         Me.Show.Text = "Show"
         '
         'Button2
@@ -194,11 +195,24 @@ Partial Class Form1
         'Timer2
         '
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Times New Roman", 26.25!, System.Drawing.FontStyle.Bold)
+        Me.Label8.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Label8.Location = New System.Drawing.Point(605, 63)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(6, 0, 6, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(69, 79)
+        Me.Label8.TabIndex = 101
+        Me.Label8.Text = "0"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1215, 682)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -234,5 +248,6 @@ Partial Class Form1
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 
 End Class
