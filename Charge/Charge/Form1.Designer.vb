@@ -75,7 +75,7 @@ Partial Class Form1
         '
         'Timer3
         '
-        Me.Timer3.Interval = 1
+        Me.Timer3.Interval = 1000
         '
         'Label1
         '
@@ -183,18 +183,18 @@ Partial Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Exit_1, Me.Show})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(174, 80)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(149, 76)
         '
         'Exit_1
         '
         Me.Exit_1.Name = "Exit_1"
-        Me.Exit_1.Size = New System.Drawing.Size(173, 38)
+        Me.Exit_1.Size = New System.Drawing.Size(148, 36)
         Me.Exit_1.Text = "Exit"
         '
         'Show
         '
         Me.Show.Name = "Show"
-        Me.Show.Size = New System.Drawing.Size(173, 38)
+        Me.Show.Size = New System.Drawing.Size(148, 36)
         Me.Show.Text = "Show"
         '
         'Button2
@@ -331,7 +331,7 @@ Partial Class Form1
         '
         'Timer4
         '
-        Me.Timer4.Interval = 1
+        Me.Timer4.Interval = 1000
         '
         'Label18
         '
