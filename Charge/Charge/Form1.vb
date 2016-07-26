@@ -52,6 +52,8 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ContextMenuStrip1.Enabled = False
+        Label25.Text = Date.Today.ToLongDateString()
+
         Timer3.Enabled = True
         Label8.Text = SystemInformation.PowerStatus.BatteryLifePercent * 100
         If My.Computer.Network.IsAvailable Then
