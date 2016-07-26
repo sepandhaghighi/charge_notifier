@@ -59,6 +59,7 @@ Partial Class Form1
         Me.Label23 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -415,12 +416,23 @@ Partial Class Form1
         Me.Label25.Size = New System.Drawing.Size(0, 41)
         Me.Label25.TabIndex = 117
         '
+        'Button3
+        '
+        Me.Button3.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(416, 532)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(338, 105)
+        Me.Button3.TabIndex = 118
+        Me.Button3.Text = "Hibernate"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1215, 682)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label25)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label24)
@@ -492,5 +504,6 @@ Partial Class Form1
     Friend WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents Label24 As System.Windows.Forms.Label
     Friend WithEvents Label25 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 
 End Class
